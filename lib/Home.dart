@@ -1,3 +1,6 @@
+import 'package:facebook/sections/headerButtonSection.dart';
+import 'package:facebook/sections/statusSection.dart';
+import 'package:facebook/widgets/appBarButton.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -12,16 +15,26 @@ class Home extends StatelessWidget {
             style: TextStyle(
                 color: Colors.blue, fontSize: 26, fontWeight: FontWeight.bold)),
         actions: <Widget>[
-          Container(
-              margin: EdgeInsets.all(5),
-              decoration: BoxDecoration(
-                  color: Colors.grey[300], shape: BoxShape.circle),
-              child: IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.search, color: Colors.black, size: 25),
-              )),
+          AppBarButton(
+              buttonIcon: Icons.search,
+              buttonAction: () {
+                print('Serach screen appears');
+              }),
+          AppBarButton(
+              buttonIcon: Icons.chat,
+              buttonAction: () {
+                print(' messager appears');
+              }),
         ],
       ),
+      body: ListView(children: [
+        StatusSection(),
+        Divider(
+          thickness: 1,
+          color: Colors.grey[300],
+        ),
+        HeaderButtonSection()
+      ]),
     ));
   }
 }
