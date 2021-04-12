@@ -1,8 +1,10 @@
+import 'package:facebook/assets.dart';
 import 'package:facebook/sections/headerButtonSection.dart';
 import 'package:facebook/sections/roomSection.dart';
 import 'package:facebook/sections/statusSection.dart';
 import 'package:facebook/sections/storySection.dart';
 import 'package:facebook/widgets/circularButton.dart';
+import 'package:facebook/widgets/postCard.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -47,8 +49,39 @@ class Home extends StatelessWidget {
         RoomSection(),
         thickDivider,
         StorySection(),
-        thickDivider
-        
+        thickDivider,
+        PostCard(
+            avatar: mohanlal,
+            name: 'Mohan Lal',
+            publishedAt: '5h',
+            postTitle: 'Happy Diwali',
+            postImage: post4,
+            showBlueTick: true),
+        thickDivider,
+        PostCard(
+            avatar: raj,
+            name: 'PrithviRaj',
+            publishedAt: '4h',
+            postTitle: 'Happy Diwali',
+            postImage: post1,
+            showBlueTick: true),
+        thickDivider,
+        PostCard(
+            avatar: mammootty,
+            name: 'Mammootty',
+            publishedAt: '4h',
+            postTitle: 'Happy Diwali',
+            postImage: mammootty,
+            showBlueTick: true),
+        thickDivider,
+        PostCard(
+            avatar: vishnu,
+            name: 'Vishnu Kumar',
+            publishedAt: '4h',
+            postTitle: '',
+            postImage: flash,
+            showBlueTick: false),
+        thickDivider,
       ]),
     ));
   }
