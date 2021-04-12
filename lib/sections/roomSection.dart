@@ -29,14 +29,14 @@ class RoomSection extends StatelessWidget {
         padding: EdgeInsets.all(10),
         children: [
           creteRoomButton(),
-          Avatar(displayImage: dulqur),
-          Avatar(displayImage: raj),
-          Avatar(displayImage: mohanlal),
-          Avatar(displayImage: mammootty),
-           Avatar(displayImage: dulqur),
-          Avatar(displayImage: raj),
-          Avatar(displayImage: mohanlal),
-          Avatar(displayImage: mammootty),
+          Avatar(displayImage: dulqur, displayStatus: true,),
+          Avatar(displayImage: raj, displayStatus: true),
+          Avatar(displayImage: mohanlal, displayStatus: true),
+          Avatar(displayImage: mammootty, displayStatus: true),
+           Avatar(displayImage: dulqur, displayStatus: true),
+          Avatar(displayImage: raj, displayStatus: true),
+          Avatar(displayImage: mohanlal, displayStatus: true),
+          Avatar(displayImage: mammootty, displayStatus: true),
          
 
         ],
