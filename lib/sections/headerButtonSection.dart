@@ -16,6 +16,11 @@ class HeaderButtonSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Widget verticalDivider = VerticalDivider(
+      color: Colors.grey[300],
+      thickness: 1,
+    );
+
     return Container(
       height: 40,
       child: Row(
@@ -28,10 +33,7 @@ class HeaderButtonSection extends StatelessWidget {
               buttonColor: Colors.red,
               buttonIcon: Icons.video_call,
               buttonText: 'Live'),
-          VerticalDivider(
-            thickness: 1,
-            color: Colors.grey[300],
-          ),
+          verticalDivider,
           headerButton(
               buttonAction: () {
                 print('take photo');
@@ -39,10 +41,7 @@ class HeaderButtonSection extends StatelessWidget {
               buttonColor: Colors.green,
               buttonIcon: Icons.photo_library,
               buttonText: 'photo'),
-          VerticalDivider(
-            thickness: 1,
-            color: Colors.grey[300],
-          ),
+          verticalDivider,
           headerButton(
               buttonAction: () {
                 print('Create chat room');
@@ -53,7 +52,8 @@ class HeaderButtonSection extends StatelessWidget {
           Divider(
             thickness: 10,
             color: Colors.grey[300],
-          )
+          ),
+          
         ],
       ),
     );
