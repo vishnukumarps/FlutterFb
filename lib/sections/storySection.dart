@@ -19,7 +19,7 @@ class StorySection extends StatelessWidget {
 
           StoryCard(
             avatar: mammootty,
-            labeltText: 'Add story',
+            labeltText: null,
             story: post1, //Image
             createStoryStatus: false,
           ),
@@ -27,14 +27,14 @@ class StorySection extends StatelessWidget {
           
           StoryCard(
             avatar: mohanlal,
-            labeltText: 'Add story',
+            labeltText: null,
             story: post2, //Image
             createStoryStatus: false,
           ),
           
           StoryCard(
             avatar: raj,
-            labeltText: 'Add story',
+            labeltText: null,
             story: post3, //Image
             createStoryStatus: false,
           ),
