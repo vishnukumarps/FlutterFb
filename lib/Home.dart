@@ -5,6 +5,7 @@ import 'package:facebook/sections/storySection.dart';
 import 'package:facebook/widgets/circularButton.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class Home extends StatelessWidget {
   Widget thinDivider = Divider(
     thickness: 1,

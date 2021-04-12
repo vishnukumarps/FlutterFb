@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 class RoomSection extends StatelessWidget {
   Widget creteRoomButton() {
+    // ignore: deprecated_member_use
     return OutlineButton.icon(
         shape: StadiumBorder(),
         borderSide: BorderSide(color: Colors.blue[100], width: 2),
