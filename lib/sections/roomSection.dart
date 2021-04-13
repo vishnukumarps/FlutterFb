@@ -1,5 +1,5 @@
 import 'package:facebook/assets.dart';
-import 'package:facebook/widgets/avatar.dart';
+import 'package:facebook/widgets/circularAvatar.dart';
 import 'package:flutter/material.dart';
 
 class RoomSection extends StatelessWidget {
@@ -30,14 +30,14 @@ class RoomSection extends StatelessWidget {
         padding: EdgeInsets.all(10),
         children: [
           creteRoomButton(),
-          Avatar(displayImage: dulqur, displayStatus: true,),
-          Avatar(displayImage: raj, displayStatus: true),
-          Avatar(displayImage: mohanlal, displayStatus: true),
-          Avatar(displayImage: mammootty, displayStatus: true),
-           Avatar(displayImage: dulqur, displayStatus: true),
-          Avatar(displayImage: raj, displayStatus: true),
-          Avatar(displayImage: mohanlal, displayStatus: true),
-          Avatar(displayImage: mammootty, displayStatus: true),
+          CircularAvatar(displayImage: dulqur, displayStatus: true,),
+          CircularAvatar(displayImage: raj, displayStatus: true),
+          CircularAvatar(displayImage: mohanlal, displayStatus: true),
+          CircularAvatar(displayImage: mammootty, displayStatus: true),
+           CircularAvatar(displayImage: dulqur, displayStatus: true),
+          CircularAvatar(displayImage: raj, displayStatus: true),
+          CircularAvatar(displayImage: mohanlal, displayStatus: true),
+          CircularAvatar(displayImage: mammootty, displayStatus: true),
          
 
         ],

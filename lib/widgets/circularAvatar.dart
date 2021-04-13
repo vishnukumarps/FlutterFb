@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class Avatar extends StatelessWidget {
+class CircularAvatar extends StatelessWidget {
   final String displayImage;
   final bool displayStatus;
-  Avatar({@required this.displayImage, @required this.displayStatus});
+  CircularAvatar({@required this.displayImage, @required this.displayStatus});
   @override
   Widget build(BuildContext context) {
     return Stack(

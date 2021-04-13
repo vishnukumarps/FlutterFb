@@ -1,5 +1,5 @@
 
-import 'package:facebook/widgets/avatar.dart';
+import 'package:facebook/widgets/circularAvatar.dart';
 import 'package:facebook/widgets/circularButton.dart';
 import 'package:flutter/material.dart';
 
@@ -37,7 +37,7 @@ class StoryCard extends StatelessWidget {
               buttonAction: () {},
               buttonIcon: Icons.add,
             ):
-            Avatar(displayImage: avatar, displayStatus: false),
+            CircularAvatar(displayImage: avatar, displayStatus: false),
           ),
           Positioned(
             bottom: 10,

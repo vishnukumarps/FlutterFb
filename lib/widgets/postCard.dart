@@ -1,4 +1,4 @@
-import 'package:facebook/widgets/avatar.dart';
+import 'package:facebook/widgets/circularAvatar.dart';
 import 'package:facebook/widgets/blueTick.dart';
 import 'package:flutter/material.dart';
 
@@ -76,7 +76,7 @@ class PostCard extends StatelessWidget {
 
   Widget postCardHeader() {
     return ListTile(
-      leading: Avatar(
+      leading: CircularAvatar(
         displayImage: avatar,
         displayStatus: false,
       ),

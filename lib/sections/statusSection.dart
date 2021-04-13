@@ -1,5 +1,5 @@
 
-import 'package:facebook/widgets/avatar.dart';
+import 'package:facebook/widgets/circularAvatar.dart';
 import 'package:flutter/material.dart';
 import 'package:facebook/assets.dart';
 
@@ -7,7 +7,7 @@ class StatusSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading:Avatar(displayImage: dulqur, displayStatus: false,),
+      leading:CircularAvatar(displayImage: dulqur, displayStatus: false,),
       title: TextField(
           decoration: InputDecoration(
         hintText: "What's own your mind",
